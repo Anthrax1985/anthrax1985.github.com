@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://anthrax1985.github.io/"/>
-  <updated>2018-01-19T14:56:47.000Z</updated>
+  <updated>2018-02-08T15:07:44.000Z</updated>
   <id>https://anthrax1985.github.io/</id>
   
   <author>
@@ -17,60 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>title</title>
-    <link href="https://anthrax1985.github.io/2018/01/19/title-1/"/>
-    <id>https://anthrax1985.github.io/2018/01/19/title-1/</id>
-    <published>2018-01-19T14:56:47.000Z</published>
-    <updated>2018-01-19T14:56:47.000Z</updated>
+    <title>体验hexo</title>
+    <link href="https://anthrax1985.github.io/2017/08/17/%E4%BD%93%E9%AA%8Chexo/"/>
+    <id>https://anthrax1985.github.io/2017/08/17/体验hexo/</id>
+    <published>2017-08-17T09:35:23.000Z</published>
+    <updated>2018-02-08T15:07:44.000Z</updated>
     
-    <summary type="html">
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>使用hexo</title>
-    <link href="https://anthrax1985.github.io/2018/01/19/title/"/>
-    <id>https://anthrax1985.github.io/2018/01/19/title/</id>
-    <published>2018-01-19T14:56:25.000Z</published>
-    <updated>2018-01-19T15:27:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>Markdown的Title使用 </p><p>试用一下JSFidde 因为今晚第一次听说<br><iframe scrolling="no" width="300" height="300" src="//jsfiddle.net/shorttag/embedded/js,html,css,result/dark" frameborder="0" allowfullscreen></iframe></p><p>‘’’</p><p>‘’’</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="体验Hexo"><a href="#体验Hexo" class="headerlink" title="体验Hexo"></a>体验Hexo</h1><p>所谓体验hexo，其实也就是自己对文档的再理解的过程。<br>下面把一些例子，记录下来，方便以后回忆</p><h2 id="Ⅰ-框架的构成"><a href="#Ⅰ-框架的构成" class="headerlink" title="Ⅰ.框架的构成"></a>Ⅰ.框架的构成</h2><p>hexo属于静态的blog框架，其主要的组成为<br><img src="/img/hexo体验/hexo结构.png" class="structimage" width="284" height="399" title="[hexo结构图片]"></p><p>接下来通过理解各个组成部分来掌握hexo</p><h3 id="1-scaffoads-脚手架）"><a href="#1-scaffoads-脚手架）" class="headerlink" title="1.scaffoads(脚手架）"></a>1.scaffoads(脚手架）</h3><p>就和其字面意思一样，是为了快速生成某种固定layout，预先设置的模板内容。<br>在通过命令来新建文章时，通过设定的layout内容快速的寻找固定的模式，来生成文章。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new layout postName</div></pre></td></tr></table></figure></p><h3 id="2-source-源文件"><a href="#2-source-源文件" class="headerlink" title="2.source(源文件)"></a>2.source(源文件)</h3><p>这个文件夹就是整个hexo的核心，存放源文件的地方。<br>按照功能来划分3种类型的文件夹</p><ul><li>Post<br>  正式发布的文件，通过<em>hexo g</em>来生成静态发布内容</li><li>Draft<br>  草稿箱 不能通过<em>hexo g</em>来生成内容</li><li>Custom<br>  自定义文件夹，通过<em>hexo g</em>来生成静态发布内容。</li></ul><h3 id="3-theme（主题）"><a href="#3-theme（主题）" class="headerlink" title="3.theme（主题）"></a>3.theme（主题）</h3><p>为了显示不同的页面布局、我们可以通过自定义主题、或者引用别人主题的方式来<br>定制自己的hexo样式。</p><h3 id="4-config-yaml-配置文件"><a href="#4-config-yaml-配置文件" class="headerlink" title="4.config.yaml(配置文件)"></a>4.config.yaml(配置文件)</h3><p>已经预设了hexo支持的配置项，只要简单的配置内容即可定制自己的blog</p><h2 id="Ⅱ-实际使用"><a href="#Ⅱ-实际使用" class="headerlink" title="Ⅱ.实际使用"></a>Ⅱ.实际使用</h2><h3 id="1-环境配置"><a href="#1-环境配置" class="headerlink" title="1.环境配置"></a>1.环境配置</h3><p>参考官方文档、百度一些文章就能完成，我这里就不重复造轮子</p><h3 id="2-日常使用"><a href="#2-日常使用" class="headerlink" title="2.日常使用"></a>2.日常使用</h3><p>对于日常写作来说、只要记住以下的命令基本就能运作起来。<br><figure class="highlight plain"><figcaption><span>创建文章新文章</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new layout postname</div></pre></td></tr></table></figure><br><figure class="highlight plain"><figcaption><span>生成静态文件</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo g</div></pre></td></tr></table></figure><br><figure class="highlight plain"><figcaption><span>本地预览服务器启动</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo server</div></pre></td></tr></table></figure><br><figure class="highlight plain"><figcaption><span>部署</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d</div></pre></td></tr></table></figure></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Markdown的Title使用 &lt;/p&gt;
-&lt;p&gt;试用一下JSFidde 因为今晚第一次听说&lt;br&gt;&lt;iframe scrolling=&quot;no&quot; width=&quot;300&quot; height=&quot;300&quot; src=&quot;//jsfiddle.net/shorttag/embedded/j
+        &lt;h1 id=&quot;体验Hexo&quot;&gt;&lt;a href=&quot;#体验Hexo&quot; class=&quot;headerlink&quot; title=&quot;体验Hexo&quot;&gt;&lt;/a&gt;体验Hexo&lt;/h1&gt;&lt;p&gt;所谓体验hexo，其实也就是自己对文档的再理解的过程。&lt;br&gt;下面把一些例子，记录下来，方便以后回忆&lt;/p&gt;
       
     
     </summary>
-    
-      <category term="tech" scheme="https://anthrax1985.github.io/categories/tech/"/>
-    
-      <category term="blog" scheme="https://anthrax1985.github.io/categories/tech/blog/"/>
-    
-      <category term="hexo" scheme="https://anthrax1985.github.io/categories/tech/blog/hexo/"/>
     
     
       <category term="hexo" scheme="https://anthrax1985.github.io/tags/hexo/"/>
     
-  </entry>
-  
-  <entry>
-    <title>mypost</title>
-    <link href="https://anthrax1985.github.io/2018/01/19/mypost/"/>
-    <id>https://anthrax1985.github.io/2018/01/19/mypost/</id>
-    <published>2018-01-19T14:55:38.000Z</published>
-    <updated>2018-01-19T14:55:38.000Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
+      <category term="demo" scheme="https://anthrax1985.github.io/tags/demo/"/>
     
   </entry>
   
